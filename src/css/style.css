@@ -1,0 +1,40 @@
+/* FONTS
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+ */
+
+main{
+    height: 880px;
+    width: 1440px;
+    background: var(--primary) url(../images/bg-desktop.svg) no-repeat;
+    padding: 53px;
+}
+
+main .logo img{
+    margin-bottom: 80px;
+    width: 215px;
+    margin-left: 17px;
+}
+
+main .main{
+    display: flex;
+    margin-left: 20px;
+}
+
+main .main .info{
+    padding: 48px 40px 48px 54px;
+}
+
+main .main .info h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 39px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+main .main .info p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+}
