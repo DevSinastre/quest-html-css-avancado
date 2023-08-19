@@ -3,6 +3,10 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Poppins', sans-serif;
  */
 
+ body{
+    background-color: var(--primary);
+ }
+
 main{
     height: 880px;
     width: 1440px;
@@ -21,13 +25,17 @@ main .main{
     margin-left: 20px;
 }
 
+main .main .illustration{
+    margin-top: 3px;
+}
+
 main .main .info{
     padding: 48px 40px 48px 54px;
 }
 
 main .main .info h1{
     font-family: 'Poppins', sans-serif;
-    font-size: 39px;
+    font-size: 38px;
     letter-spacing: 1px;
     font-weight: 600;
     margin-bottom: 25px;
@@ -36,5 +44,95 @@ main .main .info h1{
 main .main .info p{
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
-    line-height: 25px;
+    line-height: 26px;
+    color: #FFEFFF;
+    margin-bottom: 26px;
+}
+
+main .main .info button{
+    background-color: white;
+    color: #7D6EAD;
+    width: 200px;
+    height: 56px;
+    border: solid 1px white;
+    border-radius: 30px;
+    font-size: 19px;
+    box-shadow: 2px 5px 15px rgb(57, 57, 57);
+    transition: 0.3s;
+}
+
+main .main .info button:hover{
+    cursor: pointer;
+    background-color: var(--soft);
+    border: solid 1px var(--soft);
+    color: white;
+}
+
+main .contact{
+    height: 75px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 19px;
+    margin-top: 8px;
+}
+
+main .contact>a{
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+main .contact>a i{
+    transition: 0.3s;
+}
+
+main .contact>a:hover{
+    border: 1px solid var(--soft);
+}
+
+main .contact>a:hover i{
+    color: var(--soft);
+}
+
+main .contact i{
+    font-size: 19px;
+    color: white;
+}
+
+@media(max-width:768px){
+
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    main .main .illustration img{
+        min-width: 90%;
+    }
+
+    main .main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .logo img{
+        margin-bottom: 80px;
+        width: 215px;
+        margin-left: 17px;
+    }
+}
+
+@media(max-width:360px){
+
+    main .main .illustration img{
+       width: 60%;
+    }
 }
